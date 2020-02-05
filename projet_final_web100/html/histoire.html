@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="../css/page.css">
+</head>
+
+<body>
+	<div class="robot_wrap">
+		<div class="robot_content">
+			<h2 class=robot_title>Lit attentivement...</h2>
+			<div id="secretary_text"><br><br></div>
+			<script>
+				var myText = "Un jour, notre belle galaxie est assaillie par des envahisseurs. Vous êtes l’ultime héros de cet univers et votre objectif est des plus complexes, puisque vous devez sauver la galaxie de ses ennemis maléfiques. Lost in Space vous place en première ligne d’un combat contre des opposants envoyés par un certain GRAM, que vous rencontrerez peut-être. Vous devez contrôler un vaisseau spatial et empêcher ces extraterrestres de pouvoir rejoindre la Terre. L'avenir de ce monde est entre vos mains. En progressant dans le jeu, il deviendra possible d’améliorer votre appareil pour développer tout son potentiel offensif. Puisse le sort vous être favorable.";
+				var myArray = myText.split(""); //va couper le texte lettre par lettre
+				var timeLooper; //cette variable va nous permettre d'appeler la fonction loop() de facon continue
+				function loop() {
+					if (myArray.length > 0) //verifie si on a du texte a afficher
+					{
+						//on accede au div, on modifie le contenu et on le concatene avec myArray,shift() va supprimer la premiere lettre de myArray, et on va l'afficher entre notre div
+						document.getElementById("secretary_text").innerHTML += myArray.shift();
+					} else {
+						clearTimeout(timeLooper); //dans le cas contraire on supprime notre timeLooper
+					}
+					timeLooper = setTimeout('loop()', 70); // on va appeler cette fonction chaque 70ms
+				}
+				loop();
+			</script>
+			<div class="exit_wrap">
+				<label class="exit" for="jouer"><a href="page.html">Compris</a></label>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+h1 {
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+
+body#signin {
+	background-image: url("../images/autre/jeu.png");
+}
+
+body#Formulaire {
+	background-image: url("../images/autre/jeu.png");
+}
+
+body#manuel {
+	background-image: url("../images/autre/jeu2.jpeg");
+}
+
+#centrer {
+	text-align: center;
+}
+
+a:visited {
+	/* lien visité */
+	color: white;
+	text-decoration: none;
+}
+
+a:link {
+	/* lien visité */
+	color: white;
+	text-decoration: none;
+}
+
+#centrer input[type=submit],
+#centrer input[type=button] {
+	background-color: white;
+	border: 1px solid black;
+	padding: 5px;
+	color: black;
+	border-radius: 3px;
+}
+
+#centrer input[type=submit]:hover,
+#centrer input[type=button]:hover {
+	background-color: black;
+	color: white;
+	border-radius: 150px;
+	cursor: pointer;
+}
+
+.login {
+	color: white;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	padding-top: 30px;
+	padding-right: 80px;
+	padding-bottom: 200px;
+	padding-left: 80px;
+
+	margin-top: 100px;
+	margin-right: 50px;
+	margin-left: 0px;
+}
+
+.regles {
+	text-align: center;
+	color: white;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

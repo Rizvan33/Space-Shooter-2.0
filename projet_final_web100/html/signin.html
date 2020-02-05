@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title> Se connecter à votre compte </title>
+	<link rel="stylesheet" href="../css/Formulaire.css">
+
+
+</head>
+
+<body id=signin>
+	<div class="login">
+		<form name="inscription" action="../projet2.html">
+			<div id="centrer">
+				Connexion <br><br><br><br>
+			</div>
+			<div id="username">
+				Username
+				<input type="text" placeholder="Username" name="username" autofocus> <br><br>
+			</div>
+			<div>
+				Mot de passe
+				<input type="password" placeholder="Password" name="mdp"><br><br>
+			</div>
+			<div id="centrer">
+				<input type="submit" value="Connexion" name="submit">
+				<input type="button" value="Annuler" onclick='window.location.href="../projet.html";'> <br><br><br><br>
+			</div>
+		</form>
+		Vous n'avez pas de compte ? <a href="Formulaire.html"> Cliquer-ici </a>
+
+		<p style="color: red;" id="erreur"></p>
+		<script src="../js/app2.js"></script>
+
+	</div>
+
+</body>
+
+</html>
